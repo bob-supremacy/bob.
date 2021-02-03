@@ -1,0 +1,10 @@
+{
+    "name" : "Poll",
+    "author" : ["bob", "bobsCog"],
+    "short" : "Create polls using reactions as the responses",
+    "description" : "Create polls using reactions as the responses.\n\nDependencies: None",
+    "install_msg" : "Thanks for installing Poll. Please make sure your bot has the 'Manage Messages' permission so it can manage emoji reactions on messages.",
+    "tags" : ["poll", "reaction", "react"],
+    "permissions" : ["add_reactions", "embed_links"],
+    "end_user_data_statement": "This cog stores Discord IDs as needed for operation temporary during a poll which are automatically deleted when it ends."
+}
