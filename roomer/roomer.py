@@ -72,7 +72,7 @@ class Roomer(commands.Cog):
                 reason=_("Automated voicechannel creation."),
             )
             perms = discord.PermissionOverwrite(view_channel=True, connect=True, speak=True, manage_channels=True)
-            await channel.set_permissions(member, perms, "Applied Permissions to Channel owner")
+            await channel.set_permissions(member, overwrite = perms, reason = "Applied Permissions to Channel owner")
             await member.move_to(channel, reason=_("Moved to automatically created channel."))
 
     async def _maybe_delete_auto_channels(self, settings, member, before_channel, after_channel):
