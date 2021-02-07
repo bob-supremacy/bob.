@@ -69,9 +69,10 @@ class Roomer(commands.Cog):
         if after_channel.id in settings["auto_channels"]:
             channel = await after_channel.category.create_voice_channel(
                 settings["name"],
-                overwrites=view_channel=True, connect=True, speak=True, manage_channels=True,
                 reason=_("Automated voicechannel creation."),
             )
+            channel.PermissionOverwrite(view_channel=True, connect=True, speak=True, manage_channels=True)
+
             await member.move_to(channel, reason=_("Moved to automatically created channel."))
 
     async def _maybe_delete_auto_channels(self, settings, member, before_channel, after_channel):
