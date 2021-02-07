@@ -1,20 +1,10 @@
 {
-    "author": [
-      "Dav"
-    ],
-    "description": "Tools for voicechannels. \n - Automated voicechannel creation \n - Private voicechannels \n - Private textchannels",
-    "hidden": false,
-    "install_msg": "Thanks for using roomer. Check out all settings in `[p]roomer`.",
-    "short": "Tools for voicechannels NEW: Private Text channels",
-    "tags": [
-      "members",
-      "vc",
-      "voicechannel",
-      "textchannel",
-      "automation",
-      "private",
-      "private channels",
-      "tools"
-    ],
-    "end_user_data_statement": "This cog does not store end user data."
-  }
+  "name" : "Poll",
+  "author" : ["bob", "bobsCog"],
+  "short" : "Create polls using reactions as the responses",
+  "description" : "Create polls using reactions as the responses.\n\nDependencies: None",
+  "install_msg" : "Thanks for installing Poll. Please make sure your bot has the 'Manage Messages' permission so it can manage emoji reactions on messages.",
+  "tags" : ["poll", "reaction", "react"],
+  "permissions" : ["add_reactions", "embed_links"],
+  "end_user_data_statement": "This cog stores Discord IDs as needed for operation temporary during a poll which are automatically deleted when it ends."
+}
