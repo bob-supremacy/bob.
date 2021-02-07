@@ -71,7 +71,7 @@ class Roomer(commands.Cog):
                 settings["name"],
                 reason=_("Automated voicechannel creation."),
             )
-            perms = discord.PermissionOverwrite(view_channel=True, connect=True, speak=True, manage_channels=True)
+            perms = discord.PermissionOverwrite(view_channel=True, connect=True, speak=True, manage_channels=True, manage_permissions=True,move=True)
             await channel.set_permissions(member, overwrite = perms, reason = "Applied Permissions to Channel owner")
             await member.move_to(channel, reason=_("Moved to automatically created channel."))
 
